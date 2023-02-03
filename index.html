@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieBase - The Entertainment Database</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <section id="intro">
+            <div>
+                <!-- <h1>MovieBase</h1> -->
+                <img src="images/logo.png" alt="logo" />
+                <h3>The Entertainment Database</h3>
+                <form action="search">
+                    <div id="search-container">
+                        <label for="search"><img src="images/search.svg" /></label>
+                        <input type="text" id="search" name="movie" placeholder="Search for Movies or Series" />
+                        
+                    </div>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+        <section id="results">
+        </section>
+        <div id="topscroll">
+            <p>&#8593</p>
+        </div>
+        <section id="pagination">
+            <ul id="pagination-list">
+            </ul>
+        </section>
+        <!-- <section id="title-info">
+            <section id="title-info-header">
+                <h1>Rambo</h1>
+                <button>X</button>
+            </section>
+        </section> -->
+        <footer>
+            <p>Website developed by James Viviers</p>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
